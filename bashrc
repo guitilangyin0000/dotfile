@@ -117,11 +117,15 @@ export GORACH=386
 export GOOS=linux
 export MYHOME=/home/benson
 export JAVA_HOME=/home/benson/download/jdk1.8.0_31
-export PATH=${PATH}:${GOROOT}/bin:${JAVA_HOME}/bin:${MYHOME}/liteide/bin/:${MYHOME}/download/eclipse/
+export CLASSPATH=.:
+export PATH=${PATH}:${GOROOT}/bin:${JAVA_HOME}/bin:${MYHOME}/liteide/bin/:${MYHOME}/download/eclipse/:/home/benson/download/apache-maven-3.3.3/bin/
 export GOPATH=${MYHOME}/p2:${MYHOME}/goStorage
 alias cls=clear
 alias cdu='cd ../'
 alias cduu='cd ../../'
 alias gopen=gnome-open
 alias sshfirst='ssh-keygen -f "/home/benson/.ssh/known_hosts" -R pennyjob.net'
-alias sshsecond='ssh -f -NC -D 8080 pennyjob@pennyjob.net'
+alias sshsecond='ssh -f -NC -D 8080 mouboshi@pennyjob.net'
+
+# added by Anaconda 2.2.0 installer
+export PATH="/home/benson/anaconda/bin:$PATH"
