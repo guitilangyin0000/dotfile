@@ -17,7 +17,7 @@ syntax on
 func! CompileGcc()
     exec "w"
     let compilecmd="!gcc "
-    let compileflag="-std=c99 -o %< "
+    let compileflag="-std=c99 -g -o %< "
     if search("mpi\.h") != 0
         let compilecmd = "!mpicc "
     endif
@@ -38,7 +38,7 @@ endfunc
 func! CompileGpp()
     exec "w"
     let compilecmd="!g++ "
-    let compileflag="-std=c++11 -o %< "
+    let compileflag="-std=c++11 -g -o %< "
     if search("mpi\.h") != 0
         let compilecmd = "!mpic++ "
     endif
