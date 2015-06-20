@@ -1,6 +1,6 @@
 source ~/.vim/bundles.vim
 set runtimepath+=$GOROOT/misc/vim
-set tags=/usr/include/tags,./tags
+set tags=./tags
 " encoding dectection
 set nocp
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
@@ -113,7 +113,7 @@ set background=dark
 " highlight current line
 "au WinLeave * set nocursorline nocursorcolumn
 "au WinEnter * set cursorline cursorcolumn
-"set cursorline cursorcolumn
+set cursorline cursorcolumn
 
 " search
 set incsearch
@@ -125,7 +125,7 @@ set smartcase
 set completeopt=longest,menu
 set history=1000
 set nocompatible
-set nofoldenable                                                  " disable folding"
+" set nofoldenable                                                  " disable folding"
 set confirm                                                       " prompt when existing from an unsaved file
 set backspace=indent,eol,start                                    " More powerful backspacing
 set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
@@ -139,7 +139,8 @@ set showcmd                                                       " show typed c
 set title                                                         " show file in titlebar
 set laststatus=2                                                  " use 2 lines for the status bar
 set matchtime=2                                                   " show matching bracket for 0.2 seconds
-set matchpairs+=<:>                                               " specially for html
+" set matchpairs+=<:>                                               " specially for html
+
 " set relativenumber
 
 " Default Indentation
@@ -148,8 +149,8 @@ set smartindent     " indent when
 set tabstop=4       " tab width
 set softtabstop=4   " backspace
 set shiftwidth=4    " indent width
-" set textwidth=79
-" set smarttab
+set textwidth=80
+set smarttab
 set expandtab       " expand tab to space
 
 autocmd FileType php setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
@@ -276,8 +277,8 @@ let g:user_emmet_expandabbr_key='<C-j>'
 " NeoComplCache
 let g:neocomplcache_enable_at_startup=1
 let g:neoComplcache_disableautocomplete=1
-"let g:neocomplcache_enable_underbar_completion = 1
-"let g:neocomplcache_enable_camel_case_completion = 1
+let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplcache_enable_camel_case_completion = 1
 let g:neocomplcache_enable_smart_case=1
 let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
@@ -300,7 +301,7 @@ endif
 let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 
 " SuperTab
-"let g:SuperTabDefultCompletionType='context'
+let g:SuperTabDefultCompletionType='context'
 let g:SuperTabDefaultCompletionType ="<C-X><C-O>"
 let g:SuperTabRetainCompletionType=2
 
