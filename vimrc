@@ -12,7 +12,7 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 syntax on
 
 "--------
-"one button compile and run c/c++ code
+"one button compile and rue c/c++ code
 "--------
 func! CompileGcc()
     exec "w"
