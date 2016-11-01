@@ -1,7 +1,7 @@
 source ~/.vim/bundles.vim
 set runtimepath+=$GOROOT/misc/vim
 set tags=./tags
-" encoding dectection
+" encoding dectectiom
 set nocp
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 " enable filetype dectection and ft specific plugin/indent
@@ -12,7 +12,7 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 syntax on
 
 "--------
-"one button compile and run c/c++ code
+"one button compile and rue c/c++ code
 "--------
 func! CompileGcc()
     exec "w"
