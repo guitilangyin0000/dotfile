@@ -1,7 +1,7 @@
 source ~/.vim/bundles.vim
 set runtimepath+=$GOROOT/misc/vim
 set tags=./tags
-" enkoding dectectiom
+" encoding dectectiom
 set nocp
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 " enable filetype dectection and ft specific plugin/indent
